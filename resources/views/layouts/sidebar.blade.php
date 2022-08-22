@@ -1,6 +1,6 @@
 <header class="main-nav">
     <div class="sidebar-user text-center"><a class="setting-primary" href="javascript:void(0)"><i
-                data-feather="settings"></i></a><img class="img-90 rounded-circle" src="../assets/images/dashboard/1.png"
+                data-feather="settings"></i></a><img class="img-90 rounded-circle" src="../assets/images/default.png"
             alt="">
         <div class="badge-bottom"><span class="badge badge-primary">New</span></div><a href="user-profile.html">
             @if (auth()->check())
@@ -25,9 +25,9 @@
                             <h6>Akademik </h6>
                         </div>
                     </li>
-                    <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i
+                    <li class="dropdown"><a class="nav-link menu-title " href="javascript:void(0)"><i
                                 data-feather="home"></i><span>Dashboard</span></a>
-                        <ul class="nav-submenu menu-content">
+                        <ul class="nav-submenu menu-content active">
                             <li><a href="index.html">Default</a></li>
                             <li><a href="dashboard-02.html">Ecommerce</a></li>
                         </ul>
