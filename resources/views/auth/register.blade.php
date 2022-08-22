@@ -1,59 +1,61 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @include('layouts.meta')
+    <link rel="icon" href="../assets/images/default.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/default.png" type="image/x-icon">
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
-
-        <form method="POST" action="{{ route('register') }}">
-            @csrf
-
-            <!-- Name -->
-            <div>
-                <x-label for="name" :value="__('Name')" />
-
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+    <title>@yield('title-browser', 'Tugas Akhir')</title>
+    @include('layouts.css')
+  </head>
+  <body>
+    <!-- Loader starts-->
+    <div class="loader-wrapper">
+      <div class="theme-loader">
+        <div class="loader-p"></div>
+      </div>
+    </div>
+    <!-- Loader ends-->
+    <!-- page-wrapper Start-->
+    <section>
+      <div class="container-fluid p-0">
+        <div class="row m-0">
+          <div class="col-12 p-0">
+            <div class="login-card">
+              <form class="theme-form login-form">
+                <h4>Create your account</h4>
+                <h6>Enter your personal details to create account</h6>
+                <div class="form-group">
+                  <label>Your Name</label>
+                  <div class="form-group">
+                    <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
+                      <input class="form-control" type="text" required="" placeholder="Fist Name" name="name">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <div class="input-group"><span class="input-group-text"><i class="icon-email"></i></span>
+                    <input class="form-control" type="email" required="" placeholder="Test@gmail.com">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <div class="input-group"><span class="input-group-text"><i class="icon-lock"></i></span>
+                    <input class="form-control" type="password" name="password" required="" placeholder="*********">
+                    <div class="show-hide"><span class="show">                         </span></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary btn-block" type="submit">Create Account</button>
+                </div>
+                <p>Sudah punya akun ?<a class="ms-2" href="{{ route('login') }}">Masuk</a></p>
+              </form>
             </div>
-
-            <!-- Email Address -->
-            <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
-
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            </div>
-
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
-
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
-            </div>
-
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                <x-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-button class="ml-4">
-                    {{ __('Register') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- page-wrapper end-->
+@include('layouts.js')
+</html>

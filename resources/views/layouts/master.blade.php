@@ -6,7 +6,7 @@
     @include('layouts.meta')
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title>viho - Premium Admin Template</title>
+    <title>@yield('title-browser', 'Tugas Akhir')</title>
     @include('layouts.css')
     <!-- Plugins css start-->
     @stack('add_css')

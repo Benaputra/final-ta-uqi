@@ -1,8 +1,8 @@
 <div class="page-main-header">
     <div class="main-header-right row m-0">
         <div class="main-header-left">
-            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid"
-                        src="../assets/images/logo/logo.png" alt=""></a></div>
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo.png"
+                        alt=""></a></div>
             <div class="dark-logo-wrapper"><a href="index.html"><img class="img-fluid"
                         src="../assets/images/logo/dark-logo.png" alt=""></a></div>
             <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="align-center"
@@ -30,29 +30,24 @@
                             <div class="input-group">
                                 <div class="input-group-prepend"><span class="input-group-text"><i
                                             class="fa fa-search"></i></span></div>
-                                <input class="form-control" type="text"
-                                    placeholder="Search for bookmark...">
+                                <input class="form-control" type="text" placeholder="Search for bookmark...">
                             </div>
                         </div>
                         <ul class="m-t-5">
-                            <li class="add-to-bookmark"><i class="bookmark-icon"
-                                    data-feather="inbox"></i>Email<span class="pull-right"><i
-                                        data-feather="star"></i></span></li>
+                            <li class="add-to-bookmark"><i class="bookmark-icon" data-feather="inbox"></i>Email<span
+                                    class="pull-right"><i data-feather="star"></i></span></li>
                             <li class="add-to-bookmark"><i class="bookmark-icon"
                                     data-feather="message-square"></i>Chat<span class="pull-right"><i
                                         data-feather="star"></i></span></li>
-                            <li class="add-to-bookmark"><i class="bookmark-icon"
-                                    data-feather="command"></i>Feather Icon<span class="pull-right"><i
-                                        data-feather="star"></i></span></li>
-                            <li class="add-to-bookmark"><i class="bookmark-icon"
-                                    data-feather="airplay"></i>Widgets<span class="pull-right"><i
-                                        data-feather="star"> </i></span></li>
+                            <li class="add-to-bookmark"><i class="bookmark-icon" data-feather="command"></i>Feather
+                                Icon<span class="pull-right"><i data-feather="star"></i></span></li>
+                            <li class="add-to-bookmark"><i class="bookmark-icon" data-feather="airplay"></i>Widgets<span
+                                    class="pull-right"><i data-feather="star"> </i></span></li>
                         </ul>
                     </div>
                 </li>
                 <li class="onhover-dropdown">
-                    <div class="notification-box"><i data-feather="bell"></i><span
-                            class="dot-animated"></span></div>
+                    <div class="notification-box"><i data-feather="bell"></i><span class="dot-animated"></span></div>
                     <ul class="notification-dropdown onhover-show-div">
                         <li>
                             <p class="f-w-700 mb-0">You have 3 Notifications<span
@@ -129,9 +124,14 @@
                     </ul>
                 </li>
                 <li class="onhover-dropdown p-0">
-                    <button class="btn btn-primary-light" type="button"><a href="login_two.html"><i
-                                data-feather="log-out"></i>Log out</a></button>
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button class="btn btn-primary-light" type="button"><a href="{{ route('logout') }}"><i
+                                        data-feather="log-out"></i>Log out</a></button>
+                    </form>
+
                 </li>
+                </form>
             </ul>
         </div>
         <div class="d-lg-none mobile-toggle pull-right w-auto"><i data-feather="more-horizontal"></i></div>
