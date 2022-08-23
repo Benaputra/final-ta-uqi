@@ -25,11 +25,32 @@
                             <h6>Akademik </h6>
                         </div>
                     </li>
-                    <li class="dropdown"><a class="nav-link menu-title " href="javascript:void(0)"><i
-                                data-feather="home"></i><span>Dashboard</span></a>
+
+                    <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i
+                                data-feather="home"></i><span>Master Data</span></a>
                         <ul class="nav-submenu menu-content active">
-                            <li><a href="index.html">Default</a></li>
-                            <li><a href="dashboard-02.html">Ecommerce</a></li>
+                            <li><a href="index.html">Mahasiswa</a></li>
+                            <li><a href="dashboard-02.html">Prodi</a></li>
+                            <li><a href="dashboard-02.html">Semester</a></li>
+                            <li><a href="dashboard-02.html">Kelas</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i
+                        data-feather="home"></i><span>Master Data</span></a>
+                <ul class="nav-submenu menu-content active">
+                    <li><a href="index.html">Mahasiswa</a></li>
+                    <li><a href="dashboard-02.html">Prodi</a></li>
+                    <li><a href="dashboard-02.html">Semester</a></li>
+                    <li><a href="dashboard-02.html">Kelas</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i
+                                data-feather="home"></i><span>Master Data</span></a>
+                        <ul class="nav-submenu menu-content active">
+                            <li><a href="index.html">Mahasiswa</a></li>
+                            <li><a href="dashboard-02.html">Prodi</a></li>
+                            <li><a href="dashboard-02.html">Semester</a></li>
+                            <li><a href="dashboard-02.html">Kelas</a></li>
                         </ul>
                     </li>
             </div>
