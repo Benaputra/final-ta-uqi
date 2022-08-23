@@ -19,6 +19,8 @@
         </div>
     </div>
     <!-- Loader ends-->
+    <!-- Validation Errors -->
+    <x-auth-validation-errors class="mb-4" :errors="$errors" />
     <!-- page-wrapper Start-->
     <section>
         <div class="container-fluid p-0">
