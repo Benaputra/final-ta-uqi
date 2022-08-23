@@ -21,14 +21,14 @@ class KelasController extends Controller
             $data = Kelas::select('id', 'name')->get();
             return DataTables::of($data)->addIndexColumn()
                 ->addColumn('action', function($data){
-                    $button = '<button type="buton" name="edit" id="'.$data->id.'" class="edit btn btn-primary btn-sm"> <i class="bi bi-pencil-square"></i>Edit</button>';
-                    $button .= ' <button type="buton" name="edit" id="'.$data->id.'" class="delete btn btn-danger btn-sm"> <i class="bi bi-backspace-reverse-fill"></i>Delete</button>';
+                    $button = '<button type="buton" name="edit" id="'.$data->id.'" class="edit btn btn-primary btn-xs"> <i class="bi bi-pencil-square"></i>Edit</button>';
+                    $button .= ' <button type="buton" name="edit" id="'.$data->id.'" class="delete btn btn-danger btn-xs"> <i class="bi bi-backspace-reverse-fill"></i>Delete</button>';
                     return $button;
                 })
                 ->make(true);
         }
 
-        return view('pages.admin.kelas.index');
+        return view('pages.kelas.index');
     }
 
     /**
@@ -59,12 +59,12 @@ class KelasController extends Controller
         // $mahasiswa->save();
 
         // dd($mahasiswa, $data);
-    
+
 
         $rules = array(
             'name' => 'required',
         );
-        
+
         $error = Validator::make($request->all(), $rules);
 
         if($error->fails())
@@ -119,7 +119,7 @@ class KelasController extends Controller
         $rules = array(
             'name' => 'required',
         );
-        
+
         $error = Validator::make($request->all(), $rules);
 
         if($error->fails())

@@ -1,6 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AbsenController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DosenController;
+use App\Http\Controllers\KelasController;
+use App\Http\Controllers\ProdiController;
+use App\Http\Controllers\JadwalController;
+use App\Http\Controllers\RuanganController;
+use App\Http\Controllers\SemesterController;
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\MatakuliahController;
+use App\Http\Controllers\KelasKuliahController;
 
 /*
 |--------------------------------------------------------------------------

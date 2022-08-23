@@ -6,3 +6,4 @@
 <meta name="keywords"
     content="admin template, viho admin template, dashboard template, flat admin template, responsive admin template, web app">
 <meta name="author" content="pixelstrap">
+<meta name="csrf-token" content="{{ csrf_token() }}">
