@@ -26,3 +26,5 @@
 <!-- Responsive css-->
 <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
 <!-- Bootstrap css-->
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">

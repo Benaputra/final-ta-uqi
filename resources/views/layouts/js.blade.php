@@ -1,4 +1,6 @@
 <!-- latest jquery-->
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+
 <script src="../assets/js/jquery-3.5.1.min.js"></script>
 <!-- feather icon js-->
 <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
