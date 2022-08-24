@@ -21,8 +21,8 @@ class KelasController extends Controller
             $data = Kelas::select('id', 'name')->get();
             return DataTables::of($data)->addIndexColumn()
                 ->addColumn('action', function($data){
-                    $button = '<button type="buton" name="edit" id="'.$data->id.'" class="edit btn btn-primary btn-xs"> <i class="bi bi-pencil-square"></i>Edit</button>';
-                    $button .= ' <button type="buton" name="edit" id="'.$data->id.'" class="delete btn btn-danger btn-xs"> <i class="bi bi-backspace-reverse-fill"></i>Delete</button>';
+                    $button = '<button type="buton" name="edit" id="'.$data->id.'" class="edit btn btn-warning btn-xs"> <i class="fa fa-edit"></i> Edit</button>';
+                    $button .= ' <button type="buton" name="edit" id="'.$data->id.'" class="delete btn btn-danger btn-xs"> <i class="fa fa-trash"></i>  Delete</button>';
                     return $button;
                 })
                 ->make(true);
